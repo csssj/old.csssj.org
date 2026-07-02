@@ -1,0 +1,16 @@
+#! /usr/bin/python3
+
+import sys
+
+
+def read_body():
+    return sys.stdin.read().encode('utf-8')
+
+
+# --------
+
+body = read_body()
+
+print("Content-type: text/html\r\n\r\n")
+
+print(body)
